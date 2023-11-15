@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Oswald:wght@300;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h3{
+    font-family: 'Oswald', sans-serif;
+}
+
+
+:root {
+    --blue: #0872b9;
+    --skyblue: #5bc5f4;
+}
+
+.bd-1 {
+    width: 30px;
+}
+
+.bd-2 {
+    width: 15px;
+}
+
+.bd-3 {
+    width: 10px;
+}
+
+.bd-4 {
+    width: 5px;
+}
+
+.bd-1,
+.bd-2,
+.bd-3,
+.bd-4 {
+    display: inline-block;
+    height: 2px;
+    background-color: var(--blue);
+}
+
+
+.portfolio-area {
+    padding: 55px 40px;
+}
+
+.portfolio-title {
+    margin-bottom: 30px;
+}
+.divider-main{
+    margin-top: -7px;
+}
+
+/*--------0verlay section----------*/
+
+.main-img{
+    position: relative;
+}
+
+.overlay1 {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: yellow;
+    overflow: hidden;
+    visibility: hidden;
+    transition: .5s ease;
+    opacity: 0.5;
+}
+
+.main-img:hover .overlay1 {
+    right: 50%;
+    left: 0;
+    visibility: visible;
+    transition: .5s ease;
+}
+
+
+.overlay2 {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: green;
+    overflow: hidden;
+    visibility: hidden;
+    transition: .5s ease;
+    opacity: 0.3;
+}
+
+.main-img:hover .overlay2 {
+    bottom: 50%;
+    visibility: visible;
+    transition: .5s ease;
+}
+
+
+
+.overlay3 {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: red;
+    overflow: hidden;
+    visibility: hidden;
+    transition: .5s ease;
+    opacity: 0.3;
+}
+
+.main-img:hover .overlay3 {
+    left: 50%;
+    right: 0;
+    visibility: visible;
+    transition: .5s ease;
+}
+
+.overlay4 {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: blue;
+    overflow: hidden;
+    visibility: hidden;
+    transition: .5s ease;
+    opacity: 0.3;
+}
+
+.main-img:hover .overlay4 {
+    top: 50%;
+    visibility: visible;
+    transition: .5s ease;
+}
+
+.icon {
+    background: var(--skyblue);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+.main-img:hover .icon {
+    transition: .5s ease;5s;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
